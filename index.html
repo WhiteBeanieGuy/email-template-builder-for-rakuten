@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" charset="utf-8"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>Email Template Builder for Rakuten</h1>
+		<br>
+		<div id="inputItems">
+			<ul>
+				<li><span>Offer ID: </span><input class="offerID" type="text" name="offerID" value="33333"></li>
+				<li><span>Text Link ID: </span><input class="textLinkID" type="text" name="textLinkID" value="265"></li>
+				<li><span>Banner ID: </span><input class="bannerID" type="text" name="bannerID" value="265"></li>
+				<li><span>With Banner?: </span>
+						<select class="withBanner">
+							<option value="yes" selected>yes</option>
+							<option value="no">no</option>
+						</select>
+				</li>
+				<li><span>Text Content: </span><input class="textContent" type="text" name="textContent" value="24-Hrs only. ALL SALE items: EXTRA 15% OFF! Shop at www.Example.com.au"></li>
+				<li><span>Banner URL: </span><input class="bannerURL" type="text" name="bannerURL" value="http://via.placeholder.com/300x250/000000/ffffff?text=BANNER"></li>
+				<li><span>Inclusive Date: </span><input class="inclusiveDate" type="text" name="inclusiveDate" value="October 4, 2017"></li>
+			</ul>
+			<span class="generateCode">GENERATE CODE</span>
+			<textarea id="downloadableCode" name="name" rows="8" cols="103"></textarea>
+			<a href="#" class="downloadCode">DOWNLOAD CODE</a>
+			<br>
+	</div>
+
+
+
+<h2>CODE PREVIEW:</h2>
+<div id="extractedCode">
+		<table style="border: 1px solid #CCCCCC; max-width: 550px !important;" class="mainLink" width="600" style="max-width: 600px;">
+			<tbody>
+				<tr>
+					<td align="center" style="border: 0px none; background-color: #ffffff;" colspan="2" class="mainLink" height="60">
+
+					<img class="logo" alt="24-Hrs only! FREE Shipping ALL footwear. NO Minimum. Shop at www.Example.com.au" src="http://via.placeholder.com/215x42/000000/ffffff?text=LOGO" border="0" style="margin: 20px;" />
+					</td>
+				</tr>
+
+				<tr>
+					<td style="border: 0px none;" colspan="2" class="mainLink">
+
+						<p style="font-family: 'Arial'; line-height: 150%; color: #333; font-size: 14px; text-align: left; margin: 20px; /*white-space: nowrap;*/">
+
+
+						<span class="textLinkHTML"></span>
+
+					<br>
+						<span style="font-family: 'Arial'; line-height: 150%; color: #f00; font-size: 14px; text-align: center; ">
+							( <i><b>Promo is Active</b> on <b><u><span class="inclusiveDate"></span></u></b>, until <b><u>11:59pm</u></b></i> )</span>
+							<span style="font-family: 'Arial'; line-height: 150%; color: #ccc; font-size: 14px; text-align: center; ">
+					<br><br>
+						<span class="bannerHTML"></span>
+
+
+					</p>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<p style="text-align: center;">--------</p>
+
+						<table style="font-family: 'Arial'; line-height: 150%; color: #333; font-size: 12px; text-align: left; margin: 10px; max-width: 530px !important; padding-left: 10px;" width="530" cellspacing="10">
+
+							<tr>
+								<td><span style="font-weight: bold; font-size: 12px; font-family: Arial;"><u>Text Link</u>:
+								</td>
+							</tr>
+							<tr>
+								<td>
+
+								<span class="textLinkHTMLCode"></span>
+								<br>
+
+								</td>
+							</tr>
+						</table>
+
+
+
+						<table id="bannerHTMLCode" style="font-family: 'Arial'; line-height: 150%; color: #333; font-size: 12px; text-align: left; margin: 10px; max-width: 530px !important; padding-left: 10px;" width="530" cellspacing="10">
+
+							<tr>
+								<td>
+								<span style="font-weight: bold; font-size: 12px; font-family: Arial;"><u>Banner</u>:
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<span class="bannerHTMLCode"></span>
+								<br>
+								</td>
+							</tr>
+						</table>
+
+
+
+						<p style="text-align:center;">********</p>
+
+
+
+						<p style="font-family: 'Arial'; line-height: 150%; color: #333; font-size: 14px; text-align: left; margin: 20px;">
+							Our eCommerce team is at your service. Please do not hesitate to contact us should you need any info, material - or should you wish to discuss further business opportunities.
+							<br /><br /><br />
+							Best Regards,<br />
+							<br />
+							<b>The eCommerce&trade; Team</b>
+						</p>
+								<br /><br /><br />
+						</td>
+					</tr>
+
+					<tr>
+						<td style="border: 0px solid #CCCCCC; background-color: #000;" colspan="2" class="mainLink" height="40">&nbsp; </td>
+					</tr>
+			</tbody>
+		</table>
+</div>
+		<br>
+		<br>
+
+		<script src="js/script.js" charset="utf-8"></script>
+	</body>
+</html>
