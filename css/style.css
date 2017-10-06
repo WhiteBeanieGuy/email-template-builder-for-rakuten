@@ -1,0 +1,57 @@
+html {
+  margin: 0px auto;
+  display: block;
+  width: 550px;
+}
+body {
+  font-family: 'Arial';
+}
+#inputItems * {
+  font-family: 'Arial';
+  font-size: 12px;
+}
+#inputItems {
+  width: 550px;
+}
+#inputItems ul li span {
+    width: 20%;
+    display: inline-block;
+    text-align: right;
+    margin-right: 5px;
+}
+
+#inputItems ul {
+  list-style-type: none;
+}
+#inputItems ul li {
+    padding: 5px;
+}
+#inputItems ul li input {
+  width: 70%;
+}
+#inputItems ul li input[type="radio"] {
+    width: 10%;
+}
+.generateCode, .downloadCode {
+    text-align: center;
+    display: block;
+    padding: 15px;
+    background-color: Red;
+    margin: 20px auto;
+    width: 200px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px !important;
+}
+.generateCode:hover, .downloadCode:hover {
+  background-color: #f85252;
+  cursor: pointer;
+}
+.downloadCode {
+  font-family: 'Arial';
+  text-decoration: none;
+}
+.downloadCode, #downloadableCode, #extractedCode, h2 {
+  display: none;
+}
+h1 { text-align: center; text-decoration: underline; font-size: 26px; }
